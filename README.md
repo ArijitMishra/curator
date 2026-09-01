@@ -82,10 +82,7 @@ source venv/bin/activate
 
 **2. Install dependencies**
 ```bash
-pip install langgraph langchain langchain-core langchain-huggingface
-pip install transformers torch accelerate
-pip install arxiv requests pyyaml python-dotenv
-pip install streamlit apscheduler
+pip install -r requirements.txt
 ```
 
 **3. Set up environment**
