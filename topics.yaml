@@ -1,0 +1,7 @@
+topics:
+  - "AI agents"
+  - "LLM reasoning"
+  - "multimodal models"
+top_n: 5 #Total papers
+schedule: "08:00"
+delivery: "file"
