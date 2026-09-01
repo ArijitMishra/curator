@@ -7,15 +7,15 @@ from state import AgentState
 from llm import generate
 
 def generate_commentary(state: AgentState) -> AgentState:
-    summaries = state["summaries"]
+    raw_papers = state["raw_papers"]
     topics = state["topics"]
 
     summaries_text = "\n".join([
-        f"- {s['title']}: {s['summary']}"
-        for s in summaries
+        f"- {s['title']}: {s['abstract']}" #Not limiting to only 200 words for now
+        for s in raw_papers
     ])
 
-    prompt = f"""You are an expert AI research analyst. Based on the following recent papers, provide a high-level commentary (5-7 sentences) covering:
+    prompt = f"""You are an expert research analyst. Based on the following recent papers, provide a high-level commentary (5-7 sentences) covering:
 - Key trends you observe
 - Most exciting or surprising work
 - What directions the field seems to be moving

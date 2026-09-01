@@ -42,6 +42,7 @@ if __name__ == "__main__":
         "raw_papers": [],
         "filtered_papers": [],
         "summaries": [],
+        "commentary":"",
         "digest": ""
     }
 
